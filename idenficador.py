@@ -13,8 +13,6 @@ mx.init()
 
 
 # trecho = 'get on your knees and bow or learn a lesson in violence'
-# os.system('cls')
-# trecho = input('Digite um trecho de uma música: ')
 def encontrar_musica(trecho, printi=False):
     resultado = search(trecho, lang='br')
     letras = False
@@ -147,10 +145,4 @@ def baixar_img(termos):
 
 # baixar_img('slayer live undead')
 # musica = encontrar_musica(trecho)
-# limpar_mp3()
-# pegar_musica(musica)
-# os.system("cls")
-# print(f'Tocando agora: {musica[0]}, de {musica[1]}.')
 mx.stop()
-# time.sleep(1)
-# limpar_mp3()
