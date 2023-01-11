@@ -66,7 +66,7 @@ def encontrar_musica(trecho, printi=False):
     else:
         content = requests.get(link).content
         site = BeautifulSoup(content, 'html.parser')
-        titulo = site.find('title').text.split('-')
+        titulo = site.find('title').text.split(' - ')
         if letras == True:
             artista = titulo[1].strip(' ')
             musica = titulo[0].strip(' ')

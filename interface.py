@@ -3,7 +3,7 @@ from idenficador import *
 
 sg.theme('Reddit')
 layout = [
-    [sg.Text('Musica: ',font='arial 12 bold'), sg.Text('',font='arial 12 bold',key='musicaatual')],
+    [sg.Text('Musica:',font='arial 12 bold'), sg.Text('',font='arial 12 bold',key='musicaatual')],
     [sg.Text('Artista: ',font='arial 12 bold'), sg.Text('',font='arial 12 bold',key='artistaatual', size=(20,1)), sg.Text('',key='status')],
     [sg.Text('Digite a letra de uma musica: ',size=(45,1)), sg.Button('Parar')],
     [sg.InputText('',key='texto', size=(50,1)), sg.Button('Tocar',font='arial 12 bold',bind_return_key=True)],
@@ -32,7 +32,6 @@ while True:
         trecho = value['texto']
         janela['status'].update('Identificando letra...')
         janela.refresh()
-        # sg.popup_quick_message('Identificando letra...', auto_close_duration=5, relative_location=(135, 0))
         musica = encontrar_musica(trecho)
         janela.refresh()
         if musica == musicatemp:
@@ -47,7 +46,6 @@ while True:
             janela['artistaatual'].update(musica[1])
             janela['status'].update('Carregando música...')
             janela.refresh()
-            # sg.popup_quick_message('Carregando música...',auto_close_duration=5,relative_location=(135,0))
             pegar_musica(musica)
             mx.init()
             tocar_mp3()
