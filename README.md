@@ -1,6 +1,8 @@
 # DescobreMusicas
-Sabe quando você quer ouvir uma musica mas não lembra o nome dela? Esse programa resolve isso.
-<br>Basta digitar um trecho de uma música para receber o título, o artista e ainda uma seção memorável da música para ouvir.
+<p align="center"
+Basta digitar um trecho de uma música para receber o título, o artista e uma seção memorável da música para ouvir.
+<br>Sabe quando você quer ouvir uma musica mas não lembra o nome dela? Esse programa resolve isso.
+</p>
 <br>
 <br>
 <p align="center">
