@@ -145,4 +145,5 @@ def baixar_img(termos):
 
 # baixar_img('slayer live undead')
 # musica = encontrar_musica(trecho)
+
 mx.stop()
